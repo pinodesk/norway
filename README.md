@@ -1,5 +1,5 @@
-<a href="https://gitlab.com/muhammadkholidb/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/muhammadkholidb/norway/badges/master/pipeline.svg" /></a> 
-<a href="https://gitlab.com/muhammadkholidb/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/muhammadkholidb/norway/badges/master/coverage.svg" /></a> 
+<a href="https://gitlab.com/muhammadkholidb/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/muhammadkholidb/norway/badges/develop/pipeline.svg" /></a> 
+<a href="https://gitlab.com/muhammadkholidb/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/muhammadkholidb/norway/badges/develop/coverage.svg" /></a> 
 
 # Norway
 
@@ -7,7 +7,7 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 
 
 #### How to Use
-1. Add JitPack maven repository
+1. Add [JitPack](https://jitpack.io/) maven repository
 ```xml
 <repositories>
     <repository>
@@ -22,6 +22,6 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 <dependency>
     <groupId>com.gitlab.muhammadkholidb</groupId>
     <artifactId>norway</artifactId>
-    <version>master-SNAPSHOT</version>
+    <version>develop-SNAPSHOT</version>
 </dependency>
 ```
