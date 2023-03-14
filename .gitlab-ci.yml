@@ -21,6 +21,7 @@ default:
 stages:
   - build
   - test
+  - deploy
   - release
 
 build:
@@ -43,6 +44,13 @@ test:
     reports:
       junit:
         - target/surefire-reports/TEST-*.xml
+  only:
+    - develop
+
+deploy-snapshot:
+  stage: deploy
+  script: ./mvnw $MAVEN_CLI_OPTS deploy -s .m2/settings.xml
+  allow_failure: false
   only:
     - develop
 
