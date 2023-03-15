@@ -21,8 +21,8 @@ default:
 stages:
   - build
   - test
-  - release
   - deploy
+  - release
 
 build:
   stage: build
@@ -67,8 +67,6 @@ release:
 
 deploy-release:
   stage: deploy
-  dependencies:
-    - release
   script: ./mvnw $MAVEN_CLI_OPTS deploy -s .m2/settings.xml
   allow_failure: false
   only:
