@@ -21,7 +21,7 @@ default:
 stages:
   - build
   - test
-  - deploy
+  - snapshot
   - release
 
 build:
@@ -47,8 +47,10 @@ test:
   only:
     - develop
 
-deploy-snapshot:
-  stage: deploy
+publish-jar-snapshot:
+  stage: snapshot
+  dependencies:
+    - test
   script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
   allow_failure: false
   only:
@@ -65,8 +67,10 @@ release:
     - develop
   when: manual
 
-deploy-release:
-  stage: deploy
+publish-jar-release:
+  stage: release
+  dependencies:
+    - release
   script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
   allow_failure: false
   only:
