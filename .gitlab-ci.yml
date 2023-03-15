@@ -49,7 +49,7 @@ test:
 
 deploy-snapshot:
   stage: deploy
-  script: ./mvnw $MAVEN_CLI_OPTS deploy -s .m2/settings.xml
+  script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
   allow_failure: false
   only:
     - develop
@@ -67,7 +67,7 @@ release:
 
 deploy-release:
   stage: deploy
-  script: ./mvnw $MAVEN_CLI_OPTS deploy -s .m2/settings.xml
+  script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
   allow_failure: false
   only:
     - master
