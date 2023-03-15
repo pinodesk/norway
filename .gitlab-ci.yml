@@ -1,4 +1,4 @@
-image: adoptopenjdk/openjdk8-openj9:alpine-slim
+image: bellsoft/liberica-openjdk-alpine:8
 
 variables:
   MAVEN_CLI_OPTS: "--show-version --batch-mode \
@@ -21,6 +21,7 @@ default:
 stages:
   - build
   - test
+  - deploy
   - release
 
 build:
@@ -37,12 +38,19 @@ test:
   script:
     - ./mvnw $MAVEN_CLI_OPTS verify
     - if [ -f $JACOCO_REPORT_HTML ]; then cat $JACOCO_REPORT_HTML | grep -o "Total[^%]*%"; fi
-  allow_failure: false
   coverage: "/Total.*?([0-9]{1,3})%/"
   artifacts:
     reports:
       junit:
         - target/surefire-reports/TEST-*.xml
+  allow_failure: false
+  only:
+    - develop
+
+deploy-snapshot:
+  stage: deploy
+  script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
+  allow_failure: false
   only:
     - develop
 
@@ -52,6 +60,14 @@ release:
     - test
   script:
     - ./mvnw $MAVEN_CLI_OPTS gitflow:release
+  allow_failure: false
   only:
     - develop
   when: manual
+
+deploy-release:
+  stage: deploy
+  script: ./mvnw $MAVEN_CLI_OPTS deploy -DskipTests -s .m2/settings.xml
+  allow_failure: false
+  only:
+    - master
