@@ -47,7 +47,7 @@ test:
   only:
     - develop
 
-publish-jar-snapshot:
+deploy-jar-snapshot:
   stage: snapshot
   dependencies:
     - test
@@ -67,7 +67,7 @@ release:
     - develop
   when: manual
 
-publish-jar-release:
+deploy-jar-release:
   stage: release
   dependencies:
     - release

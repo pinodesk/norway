@@ -1,6 +1,5 @@
-<a href="https://gitlab.com/stoready/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/stoready/norway/badges/develop/pipeline.svg" /></a> 
-<a href="https://gitlab.com/stoready/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/stoready/norway/badges/develop/coverage.svg" /></a> 
-<a href="https://jitpack.io/#com.gitlab.stoready/norway" target="_blank"><img alt="release" src="https://jitpack.io/v/com.gitlab.stoready/norway.svg" /></a> 
+<a href="https://gitlab.com/mudia/coop/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/mudia/coop/norway/badges/develop/pipeline.svg" /></a> 
+<a href="https://gitlab.com/mudia/coop/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/mudia/coop/norway/badges/develop/coverage.svg" /></a> 
 
 # Norway
 
@@ -8,21 +7,23 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 
 
 #### How to Use
-1. Add JitPack maven repository
+1. Add GitLab package registry as maven repository
+
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>gitlab-maven</id>
+        <url>https://gitlab.com/api/v4/groups/64413151/-/packages/maven</url>
     </repository>
 </repositories>
 ```
 
 2. Add this project as maven dependency
+
 ```xml
 <dependency>
-    <groupId>com.gitlab.stoready</groupId>
+    <groupId>com.gitlab.mudia.coop</groupId>
     <artifactId>norway</artifactId>
-    <version>develop-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
 </dependency>
 ```
