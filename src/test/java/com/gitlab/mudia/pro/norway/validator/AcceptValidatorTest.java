@@ -1,12 +1,12 @@
-package com.gitlab.muhammadkholidb.norway.validator;
+package com.gitlab.mudia.pro.norway.validator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
 
-import com.gitlab.muhammadkholidb.norway.annotation.Accept;
-
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import com.gitlab.mudia.pro.norway.annotation.Accept;
 
 import lombok.Data;
 

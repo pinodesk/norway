@@ -1,11 +1,11 @@
-package com.gitlab.muhammadkholidb.norway.validator;
+package com.gitlab.mudia.pro.norway.validator;
 
 import java.util.Arrays;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-import com.gitlab.muhammadkholidb.norway.annotation.Accept;
+import com.gitlab.mudia.pro.norway.annotation.Accept;
 
 public class AcceptValidator implements ConstraintValidator<Accept, Object> {
 
