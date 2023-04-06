@@ -1,5 +1,5 @@
-<a href="https://gitlab.com/mudiasoft/mob/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/mudiasoft/mob/norway/badges/develop/pipeline.svg" /></a> 
-<a href="https://gitlab.com/mudiasoft/mob/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/mudiasoft/mob/norway/badges/develop/coverage.svg" /></a> 
+<a href="https://gitlab.com/mudiasoft/norway/-/pipelines" target="_blank"><img alt="pipeline status" src="https://gitlab.com/mudiasoft/norway/badges/develop/pipeline.svg" /></a> 
+<a href="https://gitlab.com/mudiasoft/norway/-/jobs" target="_blank"><img alt="coverage report" src="https://gitlab.com/mudiasoft/norway/badges/develop/coverage.svg" /></a> 
 
 # Norway
 
@@ -22,8 +22,8 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 
 ```xml
 <dependency>
-    <groupId>com.gitlab.mudiasoft.mob</groupId>
+    <groupId>com.gitlab.mudiasoft</groupId>
     <artifactId>norway</artifactId>
-    <version>0.2.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
 </dependency>
 ```

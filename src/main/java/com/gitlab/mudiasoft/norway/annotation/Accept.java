@@ -1,4 +1,4 @@
-package com.gitlab.mudiasoft.mob.norway.annotation;
+package com.gitlab.mudiasoft.norway.annotation;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.FIELD;
@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.gitlab.mudiasoft.mob.norway.validator.AcceptValidator;
+import com.gitlab.mudiasoft.norway.validator.AcceptValidator;
 
 @Target({ FIELD, TYPE_USE, ANNOTATION_TYPE, PARAMETER })
 @Retention(RUNTIME)

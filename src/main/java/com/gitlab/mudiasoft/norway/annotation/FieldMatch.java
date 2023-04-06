@@ -1,4 +1,4 @@
-package com.gitlab.mudiasoft.mob.norway.annotation;
+package com.gitlab.mudiasoft.norway.annotation;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.TYPE;
@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.gitlab.mudiasoft.mob.norway.validator.FieldMatchValidator;
+import com.gitlab.mudiasoft.norway.validator.FieldMatchValidator;
 
 @Target({ TYPE, ANNOTATION_TYPE })
 @Retention(RUNTIME)

@@ -1,11 +1,11 @@
-package com.gitlab.mudiasoft.mob.norway.validator;
+package com.gitlab.mudiasoft.norway.validator;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import com.gitlab.mudiasoft.mob.norway.annotation.FieldMatch;
+import com.gitlab.mudiasoft.norway.annotation.FieldMatch;
 
 public class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object> {
 
