@@ -1,4 +1,4 @@
-package com.gitlab.mudiasoft.norway.validator;
+package com.mudiatech.norway.validator;
 
 import javax.validation.ConstraintValidatorContext;
 

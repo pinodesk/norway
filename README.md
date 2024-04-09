@@ -12,7 +12,7 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 ```xml
 <repositories>
     <repository>
-        <id>mudiasoft</id>
+        <id>mudiatech</id>
         <url>https://gitlab.com/api/v4/groups/64413151/-/packages/maven</url>
     </repository>
 </repositories>
@@ -22,7 +22,7 @@ Additional validator annotations for [Hibernate Validator](https://hibernate.org
 
 ```xml
 <dependency>
-    <groupId>com.gitlab.mudiasoft</groupId>
+    <groupId>com.mudiatech</groupId>
     <artifactId>norway</artifactId>
     <version>0.1.0-SNAPSHOT</version>
 </dependency>
