@@ -28,20 +28,10 @@ jobs:
           key: ${{ runner.os }}-sonar
           restore-keys: ${{ runner.os }}-sonar
 
-      - name: Cache Maven packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2
-
-      - name: Build with Maven
-        run: ./mvnw --batch-mode spotless:check pmd:check test-compile -U
-
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn --batch-mode verify -U org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=pinodesk_norway
+        run: mvn --batch-mode spotless:check pmd:check verify -U org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
 
   publish-snapshot:
     needs: build
