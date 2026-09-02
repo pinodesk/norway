@@ -1,4 +1,4 @@
-package com.mudiatech.norway.annotation;
+package com.pinodesk.norway.annotation;
 
 import static java.lang.annotation.ElementType.ANNOTATION_TYPE;
 import static java.lang.annotation.ElementType.TYPE;
@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 import javax.validation.Constraint;
 import javax.validation.Payload;
 
-import com.mudiatech.norway.validator.FieldMatchValidator;
+import com.pinodesk.norway.validator.FieldMatchValidator;
 
 @Target({ TYPE, ANNOTATION_TYPE })
 @Retention(RUNTIME)

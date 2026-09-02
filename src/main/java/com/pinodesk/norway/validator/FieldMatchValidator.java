@@ -1,11 +1,11 @@
-package com.mudiatech.norway.validator;
+package com.pinodesk.norway.validator;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.apache.commons.beanutils.BeanUtils;
 
-import com.mudiatech.norway.annotation.FieldMatch;
+import com.pinodesk.norway.annotation.FieldMatch;
 
 public class FieldMatchValidator implements ConstraintValidator<FieldMatch, Object> {
 

@@ -1,4 +1,4 @@
-package com.mudiatech.norway.validator;
+package com.pinodesk.norway.validator;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.is;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import com.mudiatech.norway.annotation.FieldMatch;
+import com.pinodesk.norway.annotation.FieldMatch;
 
 import lombok.Data;
 

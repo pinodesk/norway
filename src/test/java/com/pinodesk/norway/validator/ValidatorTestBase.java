@@ -1,4 +1,4 @@
-package com.mudiatech.norway.validator;
+package com.pinodesk.norway.validator;
 
 import javax.validation.ConstraintValidatorContext;
 
