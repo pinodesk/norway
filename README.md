@@ -1,9 +1,9 @@
-![GitHub Release](https://img.shields.io/github/v/release/pinodesk/norway)
-![CI](https://github.com/pinodesk/norway/actions/workflows/ci.yml/badge.svg)
-![codecov](https://codecov.io/gh/pinodesk/norway/branch/main/graph/badge.svg)
+[![GitHub Release](https://img.shields.io/github/v/release/pinodesk/norway)](https://github.com/pinodesk/norway/releases)
+[![CI](https://github.com/pinodesk/norway/actions/workflows/ci.yml/badge.svg)](https://github.com/pinodesk/norway/actions/workflows/ci.yml)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=pinodesk_norway&metric=coverage)](https://sonarcloud.io/summary/new_code?id=pinodesk_norway)
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=pinodesk_norway&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=pinodesk_norway)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=pinodesk_norway&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=pinodesk_norway)
-![License](https://img.shields.io/github/license/pinodesk/norway)
+[![License](https://img.shields.io/github/license/pinodesk/norway)](https://github.com/pinodesk/norway/blob/main/LICENSE)
 
 # Norway
 
