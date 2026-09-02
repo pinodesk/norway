@@ -36,18 +36,12 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
-        run: ./mvnw --batch-mode --show-version spotless:check pmd:check test-compile -U
+        run: ./mvnw --batch-mode spotless:check pmd:check test-compile -U
 
-      - name: Run tests
-        run: ./mvnw --batch-mode verify -U
-
-      - name: Generate coverage report
-        run: ./mvnw jacoco:report
-
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v6
+      - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        run: mvn --batch-mode verify -U org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=pinodesk_norway
 
   publish-snapshot:
     needs: build
